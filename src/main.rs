@@ -186,6 +186,7 @@ fn check_disks_in_drives(drives: &Vec<Arc<DiskDrive>>) -> Result<(), DiskInfoErr
 }
 
 fn parse_iso_info(input: &str) -> ParserResult<ISOInfo> {
+    let (input, _) = take_until("CD-ROM is")(input)?;                                          // Skip to the format
     let (input, _) = terminated(take_until("\n"), char_tag('\n'))(input)?;                     // Format
     let (input, _) = terminated(take_until("\n"), char_tag('\n'))(input)?;                     // System id
     let (input, volume_id_line) = terminated(take_until("\n"), char_tag('\n'))(input)?;  // Volume id
