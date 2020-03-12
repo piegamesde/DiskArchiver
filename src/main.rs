@@ -45,7 +45,8 @@ extern crate tempfile_fast;
 //  libdvdcss - driver to decode DVDs
 //  lsscsi    - to discover disk drives.
 //  blkid     - to discover if disks are in drives.
-//  eject     - optional, to open and close drives
+//  eject     - optional, to open and close drives.
+//  cdrtools  - for the `isoinfo` command.
 
 // If you keep getting IO errors, you may need to set your computer's DVD region.
 

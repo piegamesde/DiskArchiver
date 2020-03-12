@@ -9,6 +9,7 @@ It is however dependent on some external packages:
 - `eject`: open and close drives (optional but very recommended).
 - `lsscsi`: discover disk drives.
 - `blkid`: discover if disks are in drives.
+- `cdrtools`: for the `isoinfo` command.
 
 The following command should install all of the other dependencies on Ubuntu 18:
 
